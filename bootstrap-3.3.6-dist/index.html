@@ -1,0 +1,518 @@
+<!doctype html>
+<html>
+<head>
+<title>Individual</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+
+</head>
+<body>
+<div class="container-fluid">
+
+	<style type="text/css">
+
+		.h{
+		
+			background-image: url("rectangle-105.png");
+			background-repeat: no-repeat;
+			background-position: top center;
+			height: 961px;
+			background-size: cover;
+		}
+		.wrapper123{
+			float:right;
+			position:relative;
+			right:23px;
+			display:inline-block;
+		}
+		.wrapper223{ 
+
+			position:relative;
+			display:inline-block;
+		}
+		
+		.btn-custom {
+			border-radius: 100px;
+			 background-color: #16a085; 
+			 box-shadow: 0 16px 24px 0 rgba(9, 13, 52, 0.5);
+			 padding-top:27px;
+			 padding-bottom:27px;
+			 padding-left:138px;
+			 padding-right:95.4px;
+			 z-index: 1;
+			 position: relative;
+			 margin-bottom: 111px;
+		}
+		.btn-custom2 {
+			border-radius: 100px; 
+			background-color: #16a085; 
+			box-shadow: 0 16px 24px 0 rgba(9, 13, 52, 0.5);
+			padding-right:119.4px;
+			 padding-top:27px;
+			 padding-left:170.2px;
+			 padding-bottom:27px;
+			 position:relative;
+			 z-index: 1;
+			 position: relative;
+			 margin-bottom: 111px;
+		}
+		.bela-pot{
+			background-color:#ffffff;
+			width: 100%;
+			height: 208px;
+			top:0px;
+			position:relative;
+			text-align: left;			
+		}
+		.bela-pot-odsek{
+			background-color:#ffffff;
+			width:600px ;
+			height:89px;
+			top:63px;
+			position:absolute;
+			margin-left: 50%;
+			left:63px;
+		}
+		.beli-naslov{ 
+			font-family: Roboto; 
+			font-size: 36px; 
+			font-weight: normal;
+			position: absolute; 
+			letter-spacing: 1.5px; 
+			color: #4a4a4a; 
+			left:24px;
+			top:-10px;
+		}
+		.bela-cifra{
+			top:0px;
+			left:0px;
+			position:absolute;
+			font-family: .SF NS Text;
+			font-size: 18px;
+			font-weight: normal;
+			letter-spacing: 1.5px;
+			color: #000000;
+		}
+		.beli-pravokotnik{
+			width: 19px;
+			height: 5px;
+			object-fit: contain;
+			border-radius: 2.5px;
+			background-color: #16a085;
+			position:absolute;
+			top:23px;
+			left:0px;
+			z-index:1
+		}
+		.beli-span{
+			 top:61px;
+			 left:0px;
+			 position:absolute;
+			 font-family: Roboto; 
+			 font-size: 20px; 
+			 font-weight: normal; 
+			 line-height: 1.4; 
+			 color: #000000;
+		}
+		.siva-pot{
+			background-color:#f5f4f9;
+			width: 100%;
+			height: 256px;
+			top:0px;
+			position:relative;
+		}
+		.siva-pot-odsek{
+			background-color:#f5f4f9;
+			width:600px;
+			height:145px;
+			top:55px;
+			position:absolute;
+			left:63px;
+			margin-left: 50%;
+		}
+		.sivi-naslov{
+			font-family: Roboto; 
+			font-size: 36px; 
+			font-weight: normal;
+			position: absolute; 
+			letter-spacing: 1.5px; 
+			color: #4a4a4a; 
+			left:24px;
+			top:-10px;
+		}
+		.siva-cifra{
+			top:0px;
+			left:0px;
+			position:absolute;
+			font-family: .SF NS Text;	
+			font-size: 18px;
+			font-weight: normal;
+			letter-spacing: 1.5px;
+			color: #000000;
+		}
+		.sivi-pravokotnik{
+			width: 19px;
+			height: 5px;
+			object-fit: contain;
+			border-radius: 2.5px;
+			background-color: #16a085;
+			position:absolute;
+			top:23px;
+			left:0px;
+			z-index:1
+		}
+		.sivi-span{
+			top:61px;
+			left:0px;
+			position:absolute;
+			font-family: Roboto; 
+			font-size: 20px; 
+			font-weight: normal; 
+			line-height: 1.4; 
+			color: #000000;
+			display:inline-element
+		}
+		.zelena-pot{
+			background-color:#16a085;
+			width: 100%;
+			height: 299px;
+			top:0px;
+			position:relative;
+		}
+		.zelena-pot-odsek{
+			 background-color:#16a085;
+			 width:600px;
+			 height:117px;
+			 top:72px;
+			 position:absolute;
+			 left:61px;
+			 margin-left: 50%;
+		}
+		.zeleni-naslov{
+			font-family: Roboto; 
+			font-size: 36px; 
+			font-weight: normal;
+			position: absolute; 
+			letter-spacing: 1.5px; 
+			color: #ffffff; 
+			left:24px;
+			top:-10px;
+		}
+		.zelena-cifra{
+			top:0px;
+			left:0px;
+			position:absolute;
+			font-family: .SF NS Text;	
+			font-size: 18px;
+			font-weight: normal;
+			letter-spacing: 1.5px;
+			color: #000000;
+		}
+		.zeleni-pravokotnik{
+			width: 19px;
+			height: 5px;
+			object-fit: contain;
+			border-radius: 2.5px;
+			background-color: #ffffff;
+			position:absolute;
+			top:23px;
+			left:0px;
+			z-index:1
+		}
+		.zeleni-span{
+			top:118px;
+			left:0px;
+			position:absolute;
+			font-family: Roboto;
+			font-size: 20px; 
+			font-weight:normal; 
+			line-height: 1.4; 
+			letter-spacing: 0.9px;  
+			color: #ffffff;
+		}
+		.features-cesta{
+			height:177px;
+			width: 100%;
+			background-color: #ffffff;
+			top:0px;
+			position: relative;
+		}
+		.features-odsek-features{
+			margin-left:50%;
+			left:48px;
+			position:absolute;
+			top:72px;
+			font-family: Roboto;
+			font-size: 90px;
+			font-weight: normal;
+			color: #4a4a4a;
+			width:432px; 
+		}
+		.wrapperphone{
+			float:right;
+			position:relative;
+			margin-top:64px;
+			right:216px;
+			z-index: 2;
+		}
+		.picture-phone { 
+			width: 407px;
+			height: 836px; 
+			object-fit: contain;
+		}
+
+/* --------------------------------------------------------------------------------------media query---------------------------------------------------------------------------------------------------------------*/			
+		
+		@media screen and (max-width: 1200px) {
+			.wrapper123 {
+				float:none;
+				left:0px;
+	 		}
+			.right-side{
+
+				text-align: center;
+				right:8px;
+			}
+	 		.apple{
+	 			margin-top:0px;
+	 			top:0px; 
+	 		}
+	 		.play{
+	 			left:84px;
+	 		}
+			.textbtn {
+
+				text-align: left;
+			}
+			.textbtn2 {
+
+				text-align: left;
+			}
+			.picture-phone{
+				width:100%;
+			}
+			.h{
+				height: 1600px;
+
+			}
+			.bela-pot-odsek{
+				margin-left: 0%;
+
+
+			}
+			.siva-pot-odsek{
+				margin-left: 0%;
+				
+			}
+			.zelena-pot-odsek{
+				margin-left: 0%;
+
+			}
+			.features-odsek-features{
+				margin-left: 0%;
+			}
+			.features-cesta{
+				text-align: center;
+			}
+		}
+		@media (min-width: 990px) and (max-width: 1200px){
+			.wrapperphone{
+				right:0px;
+				width:100%;
+				left:50%;
+				margin-top:1000px;
+			}
+		}
+		@media screen and (max-width: 990px){
+			.wrapperphone{
+				right:0px;
+				width:100%;
+				left:0%;
+				margin-top:1000px;
+			}
+		}
+
+		@media screen and (min-width: 1920px) {
+			.h{
+				height: 100vh
+			}
+		}
+
+		@media screen and (max-width: 767px){
+
+			html{
+				width:767px;
+			}
+		}
+		@media screen and (max-width: 767px){
+			.bela-pot-odsek{
+				width:90%;
+			}
+			.siva-pot-odsek{
+				width:90%;
+			}
+
+			.zelena-pot-odsek{
+				width: 90%;
+			}
+
+		}
+		@media (max-width: 1920px) and (min-width: 1200px){
+
+			.bela-pot-odsek{
+				width:40%;
+			}
+			.siva-pot-odsek{
+				width:40%;	
+			}
+
+			.zelena-pot-odsek{
+				width:40%;
+			}
+		}
+
+		@media (min-width: 1200px ) and (max-width: 1402px){
+			.beli-span{
+				top:102px;
+			}
+			.bela-pot{
+				height: 250px;
+			}
+		}
+		@media (min-width: 1200px ) and (max-width: 1346px){
+			.sivi-span{
+				top:103px;
+			}
+			.siva-pot{
+				height:298px;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			.right-side{
+				margin-top: 0px !important;
+			}
+		}
+/* ------------------------------------------------------------------------------------media query----------------------------------------------------------------------------- */
+
+	</style>
+
+	<header class="h">
+		<div class="row">
+			<div class="col-md-12 text-center" style="margin-top:115px">
+				<img src="shape.png" style="height:110px;"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center" style="margin-top:60px">
+				<h style="width: 237px; height: 30px; font-family: Capriola; font-size: 45.7px;  line-height: 0.66; color: #ffffff;"> Individual</h>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center" style="margin-top:67px">
+				<h style="font-family: Roboto; font-size: 90px; font-weight: 500; letter-spacing: 4.2px; color: #ffffff;"> HOLIDAYS IN ISTRIA <br /> ONLY A TAP AWAY</h>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-12" class="left-side" style="margin-top:168px;text-align:center">
+				<a href="#">
+					<div class="wrapper123" >
+						<button class="btn btn-custom" >
+							<img src="icon-apple.png" class="apple" style="width: 42.3px; height: 49px; object-fit: contain;top:25.2px;left:58px;position:absolute"/>
+							<span style="font-family: Roboto;font-size: 18.5px; font-weight: normal; letter-spacing: 0.4px; color: #ffffff; ">DOWNLOAD ON THE <br /> APP STORE</span>
+						</button>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-6 col-sm-12 right-side" style="margin-top:168px;">
+				<a href="#">
+					<div class="wrapper-223" style="margin-left:23px">
+						<button class="btn btn-custom2" >
+							<img src="icon-google-play.png" class="play" style="width: 42.3px; height: 49px; object-fit: contain;  margin-top:25.2px;z-index: 1;position:absolute;left:84.2px;top:0px"/>
+							<span class="textbtn2" style="font-family: Roboto; font-size: 18.5px; font-weight: normal; letter-spacing: 0.4px; color: #ffffff; " >
+								GET IT ON <br /> GOOGLE PLAY
+							</span>
+						</button>
+					</div>
+				</a>
+			</div>
+		</div> 
+	</header>
+</div> <!-- --------------------------------------------------------------------------------tukaj je konec prvega containerja - start of d shie--------------------------------------------------------------------- -->
+<div class="container-fluid">
+	<content>
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<div class="wrapperphone" >
+					<img src="apple-i-phone-6-s-silver.png" class="picture-phone" >
+				</div>
+			</div>
+
+			<div class="row features-cesta">
+				<div class="col-md-12 col-sm-12 features-odsek-features">
+						<span>
+							FEATURES
+						</span>
+				</div>
+			</div>
+			<div class="row bela-pot">
+				<div class="col-md-6 col-sm-12">&nbsp;</div>
+				<div class="col-md-6 col-sm-12 bela-pot-odsek">
+						<span class="beli-naslov">
+							WIDE RANGE OF LOCATIONS
+						</span>
+					<span class="bela-cifra" >
+							01
+					</span>
+					<div class="beli-pravokotnik" >
+							&nbsp;
+					</div>
+					<span class="beli-span">
+							Choose between 120 locations all around Istria in Slovenia and Croatia.
+					</span>
+				</div>
+			</div>
+			<div class="row siva-pot">
+				<div class="col-md-6 col-sm-12">&nbsp;</div>
+				<div class="col-md-6 col-sm-12 siva-pot-odsek">
+					<span class="sivi-naslov">
+							TAILORED TO YOUR NEEDS
+					</span>
+					<span class="siva-cifra">
+							02
+					</span>
+					<div class="sivi-pravokotnik" >
+							&nbsp;
+					</div>
+					<span class="sivi-span">
+							The complete booking can be customised to your own needs and wishes. Choose between special offers, different accomodation or any personal wish.
+					</span>
+				</div>
+			</div>
+			<div class="row zelena-pot" style="">
+				<div class="col-md-6 col-sm-12">&nbsp;</div>
+				<div class="col-md-6 col-sm-12 zelena-pot-odsek">
+					<span class="zeleni-naslov">
+							BOOK YOUR DREAM PLACE IN A MINUTE
+					</span>
+					<span class="zelena-cifra">
+							03
+					</span>
+					<div class="zeleni-pravokotnik" >
+							&nbsp;
+					</div>
+					<span class="zeleni-span">
+							Holidays plans and booking are stressful. With Individual you can book your holidays in less than a minute. All troubles gone!
+					</span>
+				</div>
+			</div>
+					</div>
+		</div>
+	</content>
+</div>
+
+
+<script src="js/jquery.js"/>
+<script src="js/bootstrap.min.js"/>
+</body>
+</html>
